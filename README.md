@@ -11,7 +11,7 @@ A tool to help manage [codebar.io](http://codebar.io) members and events.
 
 ## Getting started
 
-First thing you will need, is to install Ruby 2.1.5
+The first thing you will need to do is install Ruby 2.1.5.
 
 ### Using [rvm](https://rvm.io/rvm/install)
 
@@ -33,7 +33,7 @@ gem install bundler
 bundle install --without production
 ```
 
-You can use the `--wihout production` flag to avoid installing the `pg` gem for PostgreSQL. You don't need it anyway on development!
+You can use the `--without production` flag to avoid installing the `pg` gem for PostgreSQL. You don't need it for development anyway!
 
 ### Setup the database
 
@@ -48,13 +48,13 @@ Create an application at `https://github.com/settings/applications/new` with
 `http://localhost:3000` as the `Homepage URL` and `http://localhost:3000/auth/github`
 as the `Authorization callback URL`.
 
-Once your development application is setup, create a file named `.env` in the root of the
+Once your development application is setup, create a file named `.env` at the root of the
 application folder with the GitHub key and secret like so:
 
     GITHUB_KEY=YOUR_KEY
     GITHUB_SECRET=YOUR_SECRET
 
-Note: Windows doesn't like creating a file named .env so do the following from a cmd prompt in your application folder:
+Note: Windows doesn't like creating a file named `.env`, so do the following from a `cmd` prompt in your application folder:
 
     echo GITHUB_KEY=YOUR_KEY >> .env
     echo GITHUB_SECRET=YOUR_SECRET >> .env
