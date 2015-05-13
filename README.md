@@ -59,6 +59,9 @@ from a `cmd` prompt in your application folder:
     echo GITHUB_KEY=YOUR_KEY >> .env
     echo GITHUB_SECRET=YOUR_SECRET >> .env
 
+`.env` is read by [dotenv](https://github.com/bkeepers/dotenv) via `dotenv-rails`
+to load the environment variables that the application expects.
+
 ### Generate some data!
 
 ```bash
